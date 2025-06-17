@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protoco do Problema</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+    <link rel="manifest" href="../icon/site.webmanifest">
+   
+</head>
+<body>
+    <body>
+        <header> 
+            <h3>NGB Support</h3>
+            <nav>
+                <a href="../Tela Abertura/index.html">Início</a>
+                <a href="../Novo Problema/index.html">Problema Novo</a>
+            </nav>
+        </header>
+    </body>
+    
+
+    <main>
+        <table id="problemasTable">
+            <thead>
+                <tr>
+                    <th>Problema</th>
+                    <th>Resolução</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <select onchange="mostrarDetalhes(this)">
+                            <option value="erro101">Erro 101 - Falha ao Enviar Documento</option>
+                            <option value="erro203">Erro 203 - Acesso Negado ao Módulo Financeiro</option>
+                            <option value="erro302">Erro 302 - Sistema Offline ou Conexão Perdida</option>
+                            <option value="erro410">Erro 410 - Campo Obrigatório Não Preenchido</option>
+                            <option value="erro504">Erro 504 - Sistema Travado ao Gerar Certidão</option>
+                        </select>
+                    </td>
+                    <td id="descricaoProblema"></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>Clique no botão ao lado caso não tenha conseguido achar seu problema.</p>
+    </footer>
+
+
+    <a href="https://wa.me/5531993452616" class="float-contact" target="_blank">
+    <img src="whatsapp.png" alt="icone"> Contato Rápido
+    </a>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adicionar Problema</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h3>NGB Support</h3>
+    <nav>
+      <a href="../Tela Abertura/index.html" id="inicioLink">Início</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Informar Problema</h2>
+    <form id="formProblema">
+      <label for="tipo">Código do Problema:</label>
+      <input type="text" id="tipo" required placeholder="Digite o tipo do problema" />
+
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" rows="5" required placeholder="Descreva o problema"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <p id="mensagem"></p>
+  </main>
+
+  
+  <a href="https://wa.me/5531993452616" class="float-contact" target="_blank">
+    <img src="whatsapp.png" alt="icone"> Contato Rápido
+  </a>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
