@@ -25,11 +25,60 @@ header {
   transition: background-color 0.3s;
 }
 
+header:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
 header .logo h1 {
   margin-left: 10px;
   background: linear-gradient(45deg, #2563EB, #ffffff);
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.logo a,
+.login-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.logo a:hover,
+.login-link:hover {
+  color: #88a7fc;
+}
+
+.google-icon {
+  margin-left: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google-icon img {
+  width: 25px;
+  height: 25px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.google-icon img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #2563EB, 0 8px 16px rgba(0, 0, 0, 0.3);
+  background-color: rgba(37, 99, 235, 0.2);
+  border-color: #2563EB;
+  cursor: default;
 }
 
 nav a {
@@ -43,7 +92,6 @@ nav a {
 nav a:hover {
   color: #88a7fc;
 }
-
 
 main {
   display: flex;
@@ -75,11 +123,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  perspective: 1000px; 
+  perspective: 1000px;
 }
 
 .image-content img {
-  width: 200px; 
+  width: 200px;
   height: 300px;
   object-fit: cover;
   animation: rotate3D 4s infinite linear;
@@ -95,27 +143,26 @@ main {
   }
 }
 
-
 .social-icons {
-display: block;
-margin-top: 20px;
-text-align: center;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .social-icon {
-width: 40px;
-height: 40px;
-border: 2px solid gray;
-border-radius: 50%;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-margin: 0 10px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  margin: 0 10px;
 }
 
 .social-icon:hover {
-transform: scale(1.1);
-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-border-color: #2563EB;
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border-color: #2563EB;
 }
 
 footer {
@@ -140,10 +187,6 @@ footer {
   transform: scale(1.1);
 }
 
-header:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
 .float-contact {
   position: fixed;
   bottom: 20px;
@@ -154,7 +197,7 @@ header:hover {
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
   z-index: 1000;
 }
